@@ -1,0 +1,2 @@
+TEST(A,B,C,D,E,G,H) B->A,D+A->C+E,D->H,G+H->C,A+C->D
+TEST2(A,B,C,D,E) B->A,D+A->C+E,D->H,A+C->D

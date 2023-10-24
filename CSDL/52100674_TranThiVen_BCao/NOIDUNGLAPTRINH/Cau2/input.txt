@@ -1,0 +1,4 @@
+R(A,B,C,D,E,F,G) E->C,G->E,A->D,A+E->G,D+F->B,D+F->C
+R1(C,T,H,R,S,G) C->T,H+R->C,H+T->R,C+S->G,H+S->R
+R2(A,B,C,D,E) B->A,D+A->C+E,D->H,A+C->D
+R3(V,E,N,D) V->E,N->D,E+N->V

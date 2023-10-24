@@ -1,0 +1,80 @@
+/1/
+có 4 loại mạng: LAN, MAN, WAN, GAN (chia theo khoảng cách)
++LAN:  trong khu vc
++MAN: trong city
++WAN: châu lục
++GAN: khác châu lục 
+có 2 loại chia theo phương thức truyền dẫn:
++ mạch chuyển mạch kenh
++mạch chuyển mạch gói
+/2/
+Một số mô hình mạng máy tính cơ bản: 
++mạng tuyến( BUS) mạng đơn giản và thường dùng nhất, dễ triển khai và tiết kiệm chi phí
+(dây cáp đơn lẻ kết nối với tất cả máy tính trên một hàng), nhưng mà mức độ ổn định không cao,
+ lỗi thì đi nguyên hệ thống và khó xác định đc lỗi.
++ mạng hình sao( Start)  cần nhiều dây cáp, mô hình lớn
+nếu thiết bị trung tâm hỏng thì hệ thống hỏng hết ( nên yêu cầu năng lực của thiết bị trung tâm phải lớn)
++ mạng vòng (ring) không có đầu bị hở, tín hiệu đi một chiều và truyền qua mỗi máy tính, 
+(máy tính lúc này là thiết bị chuyen tiep khuyeech đại tín hiệu) 
+một máy hỏng ảnh hưởng nguyên hệ thống và 1 thời điểm chỉ có 1 máy được truyền dữ liệu)
+/3/
+"""truyền đi là trên xuống (tầng cao nhất xuống)
+nhận là dưới lên"""
+/4/
+khi thiết kế hệ thống phân tầng cần phải lưu ý:
+*chọn đường truyền: 
++simplex 1 way
++ 2 hướng đồng thời full- duplex
++ 2 hướng luôn phiên half - duplex 
+*kiểm soát lỗi
+đường truyền vật lý thường xảy ra lỗi (bên thu và nhận dùng chung 1 loại mã để dễ kiểm soát lỗi hơn, 
+và bên thu phải thông báo cho bên nhận biết đã nhận đủ hay là phải trả hay truyền lại gói tin nào)
+* độ dài hay thứ tự bản tin
+gói tin luôn được chia nhỏ và sắp xếp hợp, bên nhận phải nhận và sắp xếp gói tin như thứ tự ban đầu 
+* điều khiển lưu lượng:
+bên thu và bên nhận phải biết được lưu lượng của nhau năng lực để truyền phát gói tin một cách hợp lý nhất có thể
+/5/
+mối quan hệ của 2 tầng cùng mức gọi là giao thức (protocol)
+service data unit là SDU là dữ liệu mà tầng dưới nhận từ tầng trên đó
+Prôtcol Control In4 PCI thông tin được gắn thêm vào dữ liệu khi chuyển xuống tầng dưới
+PDU = SDU + PCI
+** open system interconnection OSI
+/6/
+bit frame packet segment data
+tầng data link là liên kết dữ liệu và hủy bỏ các liên kết lỗi.....kiểm oát lỗivà kiểm oát kiểm oát lưu lượng, 
+tầng  này gồm 2 tầng nhỏ nữa: media access control and logical link control 
+Network tầng này dùng để định tuyến và xem gói tin đi đâu lại tiện nhất,  tối ưu nhất và cung cấp địa chỉ IP
+/7/
+tầng transport chủ yếu là  vận chuển và truyền lại gói tin lỗi, cung cấp address  port (TCP , UDP)
+/8/
+TÌM HIỂU TỪNG LOẠI MẠNG
+1. LAN
++Repeater(Bộ lặp)
+dùng để phục hồi lại chất lượng tín hệu
++Hub(Bộ chia) oạt động ở lớp 1
+Dữ liệu từ 1 máy chuyển đến 1 cổng Hub sẽ được chuyển đến các ổng còn lại (Half- duplex) 
++Switch oạt động ở lớp 2
+có địa chỉ vật lý nên Switch lưu lại chuyển đến đúng địa chỉ ( Full-duplex)
++Router( định tuyến) oạt động ở lớp 3
+các gói gửi đến router phải có địa chỉ nhận, gửi và địa chỉ router
+các loại cáp ở LAN
+đồng trục, cáp xoắn, cáp quang
+/9/
+Có 3 phương thức truy cập đườg truyền cơ bản:  Carrier Sense Multiple Access with Collision Detect
+												Token Passing
+												Giao diện dữ liệu phân tán sợi quang (Fiber Distributed Data Interface - FDDI)
+/10/
+Mạng Ethernet bao gồm 3 thành phần
+Thiết bị đầu cuối (Data Terminal Equipment) bao gồm các thiết bị truyền dữ liệu (PC, Print...)
+Thiết bị truyền dữ liệu( Data communication Equipment) Switch, Router
+Interconnecting media (các loại daay cáp)
+/11/
+Pre trường bắt đầu từ bit 10101010 và ""đánh dấu"" sự bắt đầu cho khunggg, và từ bit này phía nhận có thể tạo ra xung 10Mhz 
+SFD trường này bắt đầu từ 10101011 và bắt đầu khung
+Destination and Source xác định khung gửi từ đâu đến đâuuu
+Len độ lớn của dữ liệu mà khung mang theo
+/12/
+gói tin của TCP
+16 bit source chứa số hiệu cổng nguồn
+16 bit destination chứ số hiệu cổng đcíh
+/13/

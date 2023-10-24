@@ -1,0 +1,48 @@
+Crossref text and data mining
+Crossref can be used by researchers to easily harvest full text documents from participating publishers regardless of their business model (e.g. open access, subscription). Provides step-by-step instructions.
+Digital Public Library of America
+DPLA offers a single point of access to millions of items from libraries, archives, and museums around the United States. Data is available for bulk download in JSON files.
+HathiTrust Digital Library
+Its corpus is available for research purposes. Learn more at HathiTrust Research Center page. UQ Library contributes library content for digitization and inclusion in this resource. Use UQ login to access full collection.
+Google Books
+Search full text of books in many languages. Download books in the public domain. The Advanced Search allows you to filter for "full-view".
+Google Books BYU View
+Compares The Corpus of Historical American English (COHA), Google Books (Standard), and the Google Books (BYU / Advanced) corpus in NGrams.
+Google Books Ngram Viewer
+Charts the frequencies of any word or short sentence using yearly count of n-grams found in the sources printed between 1500- present. The Ngram Viewer is optimized for quick inquiries into the usage of small sets of phrases. If you're interested in performing a large scale analysis on the underlying data, download of the corpora is available. Texts are in American English, British English, French, German, Italian, Spanish, Russian, Hebrew, and Chinese.
+Internet Archive & Open Library
+Offers over 10,000,000 fully accessible books and texts. Includes texts, audio, moving images, and software as well as archived web pages in their collection. Instructions for downloading in bulk.
+Online Books Page
+Lists over 2 million free books on the internet (includes Project Gutenberg, Hathi Trust, Google Books, publisher and institutional archives, etc). Provides a section on non-English language texts.
+Project Gutenberg
+The first producer of free electronic books (ebooks), their catalog includes over 53,000 free books and over 100,000 titles. Here is the Project's Terms of Use.
+Wikidata
+Structured data from Wikipedia and other open knowledge bases, available via direct download or API. Wikidata: data access.
+Humanities and Social Sciences resources
+
+Chronicling America: Historical American Newspapers
+Collection of digitized historical newspapers from 1789-1924. OCR batch downloads available.
+Cultoromics Bookworm Viewer
+Interface tool for queries in the Google Books corpus. Developed by the Culturomics folks at Harvard it limits itself to only those digitized texts which have information about them (Full title, Publication Date, Publication Place, etc.) on OpenLibrary.org. Users can run queries in highly selective corpora based on subject (books on world history, American books on science, etc.) though these corpora are much smaller than those in the full Google Books collection.
+Early English Books Online
+EEBO-TCP is a partnership with ProQuest and with more than 150 libraries to generate highly accurate, fully-searchable, SGML/XML-encoded texts corresponding to books from the Early English Books Online Database.
+Europeana APIs
+Europeana is a digital library with millions of books, paintings, films, museum objects and archival records that have been digitized by more than 2,000 institutions across Europe.
+HuNI - Humanities Networked Infrastructure
+HuNI (Humanities Networked Infrastructure) combines data from many Australian cultural websites into the biggest humanities and creative arts database (not all full text) ever assembled in Australia. HuNI data covers all disciplines and brings together information about the people, works, events, organisations and places that make up the country's rich cultural landscape.
+University of Oxford Text Archive
+A repository of digital literary and linguistic resources for research and teaching in higher education.
+WordHoard
+Contains the entire canon of Early Greek epic in the original and in translation, as well as Chaucer, Shakespeare, and Spenser. Texts are annotated or tagged by morphological, lexical, prosodic, and narratological criteria. User interface allows non-technical users to explore the greatly increased query potential of textual data for computer-assisted study.
+Health and Science resources
+
+arXiv.org
+arXiv.org is a repository of electronic preprints of scientific papers in the fields of mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance, which can be accessed online. Produced by Cornell University.
+BioMed Central
+Over 315,000 full-text, peer-reviewed science, technology and medicine articles are available for text and data mining.
+PLOS
+Public Library of Science. Provides access to its peer-reviewed articles. Provides a specific Text Mining Collection.
+PubMed Central Databases and Text Mining Tools
+Multiple text mining tools to analyze not only scholarly publications, but also other types of biomedical resources, such as Electronic Health Records.
+The General Index
+Public Resource, a registered nonprofit organization based in California, has created a General Index to scientific journals. The General Index consists of a listing of n-grams, from unigrams to five-grams, extracted from 107 million journal articles.

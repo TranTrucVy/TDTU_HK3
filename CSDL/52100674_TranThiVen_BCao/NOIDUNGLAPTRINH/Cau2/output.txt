@@ -1,0 +1,10 @@
+X: ['B', 'G']
+CLOSURE OF R: ['C', 'B', 'G', 'E']
+CLOSURE OF R1: ['C', 'T', 'E', 'B', 'G']
+CLOSURE OF R2: ['C', 'T', 'E', 'B', 'G', 'A', 'H', 'D']
+CLOSURE OF R3: ['C', 'T', 'E', 'B', 'G', 'A', 'H', 'D']
+KEYS: 
+R : [['F', 'G', 'A'], ['F', 'A', 'E']]
+R1 : [['S', 'H']]
+R2 : []
+R3 : [['N', 'V'], ['N', 'E']]

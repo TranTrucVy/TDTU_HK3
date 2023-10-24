@@ -1,0 +1,4 @@
+X = ['B', 'G', 'H']
+table = TEST
+closure of X = ['C', 'E', 'D', 'G', 'A', 'H', 'B']
+keys = {'TEST': ['B', 'G', 'H'], 'TEST2': ['B', 'D']}

@@ -1,0 +1,120 @@
+
+//add first
+public void addFirst(E item) {
+	head = new ListNode <E> (item, head); 
+	num_nodes++;
+}
+
+//remove first
+public E removeFirst() throws NoSuchElementException {
+	ListNode <E> ln;
+	if (head == null) 
+		throw new NoSuchElementException("can't remove");
+	else { 
+		ln = head; head = head.getNext(); num_nodes--;
+		return ln.getElement();
+	}
+}
+//
+public static int choose(int n, int k) {  
+	if (k>n) return 0;
+	if (k==n || k==0) return 1;
+	return choose(n-1, k-1) + choose(n-1, k);
+}
+
+To evaluate rigorously the resources (time and space) needed by an algorithm and represent the result of the analysis with a formula
+We will emphasize more on the time requirement rather than space requirement here
+The time requirement of an algorithm is also called its time complexity
+
+
+Big O hoạc với tên gọi khác trong tiếng Việt là “độ phức tạp của thuật toán” là thuật ngữ thường dùng để chỉ khoảng thời gian tiêu hao để chạy một thuật toán
+
+public static int binSearch(int[] a, int len, int x)  {
+	int mid, low = 0; 
+	int high = len - 1;
+	while (low <= high) {
+		mid = (low + high) / 2;
+		if (x == a[mid]) return mid;
+		else if (x > a[mid]) low = mid + 1;
+		else high = mid - 1;
+	}
+	return -1;
+}
+
+
+public static void selectionSort(int[] a) {
+	for (int i = a.length-1; i >= 1; i--) {
+		int index = i; 
+		for (int j = 0; j < i; j++) {
+			if (a[j] > a[index]) 
+				index = j; 
+		}
+		int temp = a[index];
+		a[index] = a[i]; 
+		a[i] = temp;
+	}
+}
+
+public static void bubbleSort(int[] a)  {
+	for (int i = 1; i < a.length; i++) {
+		for (int j = 0; j < a.length - i; j++) {
+			if (a[j] > a[j+1]) { 
+				int temp = a[j]; 
+				a[j] = a[j+1]; 
+				a[j+1] = temp; 
+			}
+ 		}
+	}
+}
+
+
+public static void insertionSort(int[] a) {
+	for (int i=1;i<a.length;i++) { 
+		int next = a[i];
+		int j; 
+		for (j=i-1; j>=0 && a[j]>next; j--)
+			a[j+1] = a[j];
+		a[j+1] = next;  
+	}
+
+
+//selection
+Given an array of n items
+Find the largest item.
+Swap it with the item at the end of the array.
+Go to step 1 by excluding the largest item from the array.
+
+
+//bubble sort
+“Bubble” down the largest item to the end of the array in each iteration by examining the i-th and (i+1)-th items
+If their values are not in the correct order, i.e. 
+a[i] > a[i+1], swap them.
+
+//insertion sort
+Arranging a hand of poker cards
+Start with one card in your hand
+Pick the next card and insert it into its proper sorted order
+Repeat previous step for all the rest of the cards
+
+//merge sort
+Merge Sort is a divide-and-conquer sorting algorithm
+Divide Step: Divide the array into two (equal) halves.
+(Recursively) sort the two halves.
+Conquer Step: Merge the two sorted halves to form a sorted array.
+
+//quick sort
+Quick Sort is a divide-and-conquer algorithm
+Divide Step: Choose a pivot item p and partition the items of a[i..j] into 2 parts so that
+Items in the first part are < p, and
+Items in the second part are ≥ p.
+Recursively sort the 2 parts
+Conquer Step: Do nothing! No merging is needed.
+
+
+Một thuật toán sắp xếp được gọi là sắp xếp tại chỗ nếu nó chỉ yêu cầu một lượng không đổi, tức là O(1), không gian thừa trong quá trình sắp xếp.
+
+Thuật toán sắp xếp ổn định nếu thứ tự tương đối của các phần tử có cùng giá trị khóa được thuật toán bảo toàn.
+Ví dụ 1 – Một ứng dụng sắp xếp ổn định:
+Giả sử rằng tên đã được sắp xếp theo thứ tự bảng chữ cái.
+Bây giờ, nếu danh sách này được sắp xếp lại theo số nhóm hướng dẫn, thuật toán sắp xếp ổn định sẽ đảm bảo rằng tất cả sinh viên trong cùng nhóm hướng dẫn vẫn xuất hiện theo thứ tự bảng chữ cái tên của họ.
+
